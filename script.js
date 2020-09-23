@@ -71,7 +71,7 @@
  
  //get random symbol//
  function getSymbols() {
-   var sym = "!@#$%^&*()_=+?";
+   var sym = "!@#$%^&*()_=-/\+?";
    return sym[Math.floor(Math.random()*sym.length)];
  }
  console.log(getSymbols());
