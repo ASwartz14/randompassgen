@@ -28,11 +28,11 @@
 /* Gets the users password length choice if its not a number,is too big or too small
  or doesn't fit the critera for length will force user to input proper data by not moving on till they do.*/
 
- var strength = prompt("Pick your password length choose between 8 - 128 characters.");
+ var strength = prompt("Pick your password length choose a number between 8 - 128.");
  console.log(strength);
    while (isNaN(strength) || strength < 8 || strength > 128) {
      alert("Not a valid entry! Please enter a number between 8 and 128.");
-     var strength = prompt("Pick your password length choose between 8 - 128 characters.");
+     var strength = prompt("Pick your password length choose number between 8 - 128.");
    } 
  var lower= confirm("Do you want lowercase letters?");
  var upper= confirm("Do you want uppercase letters?");
@@ -42,7 +42,7 @@
  
  if (!lower&& !upper && !number && !symbols) {
    alert("Please select at least one password critera.")
-   var strength = prompt("Pick your password length choose between 8 - 128 characters.");
+   var strength = prompt("Pick your password length choose number between 8 - 128.");
    var lower= confirm("Do you want lowercase letters?");
    var upper= confirm("Do you want uppercase letters?");
    var number =confirm("Do you want numbers?");
